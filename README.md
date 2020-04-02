@@ -1,7 +1,8 @@
 # M2m: Imbalanced Classification via Major-to-minor Translation
 
 This project is for the paper 
-**M2m: Imbalanced Classification via Major-to-minor Translation (CVPR 20)**. Some codes are from [LDAM-DRW](https://github.com/kaidic/LDAM-DRW, "LDAM link")
+**M2m: Imbalanced Classification via Major-to-minor Translation (accepted in CVPR 20)**. 
+Some codes are from [LDAM-DRW](https://github.com/kaidic/LDAM-DRW, "LDAM link")
 ## Preliminaries
 It is tested under Ubuntu Linux 16.04 and Python 3.7 environment, and require Pytorch package to be installed:
 * [Pytorch (>= 1.1.0)](https://pytorch.org/, "pytorch link")
