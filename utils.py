@@ -110,13 +110,17 @@ def classwise_loss(outputs, targets):
 
 
 def focal_loss(input_values, gamma):
-    """Computes the focal loss"""
+    """Computes the focal loss
+    
+    Reference: https://github.com/kaidic/LDAM-DRW/blob/master/losses.py
+    """
     p = torch.exp(-input_values)
     loss = (1 - p) ** gamma * input_values
     return loss
 
 
 class FocalLoss(nn.Module):
+    """Reference: https://github.com/kaidic/LDAM-DRW/blob/master/losses.py"""
     def __init__(self, weight=None, gamma=0., reduction='mean'):
         super(FocalLoss, self).__init__()
         assert gamma >= 0
@@ -129,6 +133,7 @@ class FocalLoss(nn.Module):
 
 
 class LDAMLoss(nn.Module):
+    """Reference: https://github.com/kaidic/LDAM-DRW/blob/master/losses.py"""
     def __init__(self, cls_num_list, max_m=0.5, weight=None, s=30, reduction='mean'):
         super(LDAMLoss, self).__init__()
         m_list = 1.0 / np.sqrt(np.sqrt(cls_num_list))
