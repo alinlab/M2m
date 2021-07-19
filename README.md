@@ -2,7 +2,7 @@
 
 This repository contains code for the paper
 **"M2m: Imbalanced Classification via Major-to-minor Translation"** 
-by [Jaehyung Kim](https://sites.google.com/view/jaehyungkim)*, [Jongheon Jeong](https://sites.google.com/view/jongheonj)* and [Jinwoo Shin](http://alinlab.kaist.ac.kr/shin.html). 
+by [Jaehyung Kim](https://sites.google.com/view/jaehyungkim)\*, [Jongheon Jeong](https://sites.google.com/view/jongheonj)\* and [Jinwoo Shin](http://alinlab.kaist.ac.kr/shin.html). 
 
 ## Dependencies
 
